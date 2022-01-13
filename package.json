@@ -31,6 +31,8 @@
     "rxjs": "^6.3.1",
     "tether": "^1.4.4",
     "tslib": "^2.0.0",
+    "@angular/cli": "11.2.11",
+    "@angular/compiler-cli": "11.2.11",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
