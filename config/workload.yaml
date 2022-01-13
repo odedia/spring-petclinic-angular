@@ -1,0 +1,21 @@
+---
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: spring-petclinic
+    apps.tanzu.vmware.com/workload-type: web
+  name: spring-petclinic-ui
+  namespace: default
+spec:
+  build:
+    env:
+    - name: BP_NODE_RUN_SCRIPTS
+      value: build
+    - name: NODE_ENV
+      value: development
+  source:
+    git:
+      ref:
+        branch: master
+      url: https://github.com/odedia/spring-petclinic-angular
